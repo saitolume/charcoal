@@ -18,6 +18,7 @@ interface TextFieldBaseProps
   readonly className?: string
   readonly defaultValue?: string
   readonly value?: string
+  readonly onBlur?: (e: React.FocusEvent) => void
   readonly onChange?: (value: string) => void
   readonly showCount?: boolean
   readonly showLabel?: boolean

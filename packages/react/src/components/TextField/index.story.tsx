@@ -41,6 +41,7 @@ const Template: Story<Partial<TextFieldProps>> = (args) => (
         </Clickable>
       }
       placeholder="Single Line"
+      onBlur={action('blur')}
       onChange={action('change')}
       {...(args as Partial<SingleLineTextFieldProps>)}
       multiline={false}
@@ -54,6 +55,7 @@ const Template: Story<Partial<TextFieldProps>> = (args) => (
         </Clickable>
       }
       placeholder="Multi Line"
+      onBlur={action('blur')}
       onChange={action('change')}
       {...(args as Partial<MultiLineTextFieldProps>)}
       multiline
